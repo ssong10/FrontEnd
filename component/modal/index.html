@@ -7,23 +7,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button class="btn">
-    모달 열기
-  </button>
+  <button class="open__btn">열기</button>
   <div class="modal hide">
     <div class="modal__overlay"></div>
     <div class="modal__body">
+      <div class="close__btn">❌</div>
       <div class="modal__header">
-        <span>제목</span>
+        Modal
       </div>
       <div class="modal__content">
-        간략히 설명할 수 있는 모달입니다.
+        <p>간략히 설명할 수 있는 모달입니다.
         미리보기나 간단한 설명이 담겨져 있을 수 있고,
         x 버튼을 클릭하거나, 
         모달 바깥 화면을 클릭하거나,
         혹은 esc 클릭하게 되면 모달창이 닫힙니다.
+        </p>
       </div>
-      <span class="close__icon">❌</span>
     </div>
   </div>
   <script src="main.js"></script>

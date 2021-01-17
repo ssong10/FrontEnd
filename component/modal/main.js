@@ -1,26 +1,24 @@
-const $ = (el) => document.querySelector(el)
-const $modal = $('.modal')
-const $body = $('.modal__body')
+const openBtn = document.querySelector('.open__btn'),
+  modal = document.querySelector('.modal'),
+  closeBtn = document.querySelector('.close__btn'),
+  overlay = document.querySelector('.modal__overlay')
 
-
-const openModal = () => {
-  $modal.classList.remove('hide')
+function openModal() {
+  modal.classList.remove('hide')
+  document.addEventListener('keydown', escapeModal)
 }
+
 const closeModal = () => {
-  $modal.classList.add('hide')
+  modal.classList.add('hide')
+  document.removeEventListener('keydown', escapeModal)
 }
 
-const render = (options) => {
-  const {width,height} = options
-  $body.style.width = width
-  $body.style.height = height
+const escapeModal = (e) => {
+  if (e.keyCode==27){
+    closeModal()
+  }
 }
 
-render({
-  width: '40%',
-  height : '40%',
-})
-
-$('.btn').addEventListener('click', openModal)
-$('.close__icon').addEventListener('click', closeModal)
-$('.modal__overlay').addEventListener('click', closeModal)
+openBtn.addEventListener('click', openModal)
+closeBtn.addEventListener('click', closeModal)
+overlay.addEventListener('click', closeModal)
