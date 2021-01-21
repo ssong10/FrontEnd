@@ -1,0 +1,43 @@
+.create__todo {
+  margin-bottom: 10px;
+}
+.container {
+  display:flex;
+  min-height: 500px;
+}
+
+.box {
+  width : 200px;
+  border: 1px solid black
+}
+
+.item {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:10px;
+  width: 200x;
+  height: 100px;
+  background-color : gray;
+  cursor:pointer;
+}
+
+.blue {
+  background-color: #7e7ef7;
+}
+
+.red {
+ background-color: #f77e7e;
+}
+
+.yellow {
+background-color : #f7f77e;
+}
+
+.dark {
+  background-color : #7e7e7e;
+}
+
+.white {
+  background-color : #c7c7c7;
+}
