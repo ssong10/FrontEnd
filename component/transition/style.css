@@ -1,0 +1,96 @@
+.options {
+  display:flex;
+  justify-content:space-between;
+}
+.animation {
+  display:none;
+}
+.arrow {
+  font-size: 40px;
+}
+
+.main {
+  display:flex;
+  width : 100%;
+  height : 500px;
+  align-items: center;
+  justify-content: center;
+}
+.page {
+  display:none;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  font-size:50px;
+  animation-duration: 2s;
+  text-align: center;
+}
+
+.show {
+  display:block;
+
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes slideout {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left:0%
+  }
+}
+@keyframes fadeout {
+  from {
+    font-size : 100px;
+    width : 400px;
+    height: 400px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    font-size: 0px;
+    width : 0px;
+    height: 0px;
+  }
+}
+@keyframes turn {
+  /* 50% {
+    transform: translateX(20px) rotate(10deg) translateY(20px);
+  } */
+  to {
+    transform:rotate(1turn)
+  }
+}
+@keyframes dark {
+  50%{
+    color:white;
+    background-color: black;
+  }
+}
+
+@keyframes moving {
+  20%{
+    transform: translateX(-50%) translateY(-50%);
+  }
+  40%{
+    transform: translateX(50%) translateY(-50%);
+  }
+  60%{
+    transform: translateX(50%) translateY(50%);
+  }
+  80%{
+    transform: translateX(-50%) translateY(50%);
+  }
+}
