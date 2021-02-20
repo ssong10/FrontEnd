@@ -4,3 +4,29 @@
   height : 300px;
   overflow-y: scroll;
 }
+#log p {
+  margin : 8px;
+}
+.input-wrap {
+  vertical-align: text-bottom;
+  display:flex;
+  font-size : 16px;
+  align-items:center;
+  margin: 8px;
+}
+
+.input-wrap label {
+  text-align: center;
+  width : 100px;
+}
+
+.input-wrap select,.input-wrap input {
+  width : 100px;
+  height: 30px;
+  box-sizing:border-box;
+}
+
+#search {
+  width : 500px;
+  resize:none;
+}
