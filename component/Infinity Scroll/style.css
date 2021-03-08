@@ -1,0 +1,27 @@
+body { margin : 0 }
+
+.loading {
+  height : 50px;
+  line-height: 50px;
+  text-align:center;
+}
+
+#app li {
+  display:flex;
+  margin: 10px;
+  border:1px solid black;
+  height : 20vh;
+  text-align :center;
+  line-height: 20vh
+}
+.item-id {
+  border-right: 1px solid black;
+  width : 20%;
+}
+.item-data {
+  width : 80%;
+}
+
+.loading:after {
+  content: "... 로딩중 ...";
+}
